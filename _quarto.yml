@@ -3,9 +3,10 @@ project:
   output-dir: docs
 
 book:
-  title: "Tufts Research Data Warehouse"
-  author: "Tufts Clinical and Translational Science Institute (Tufts CTSI)"
-  date: 2023-09-23
+  title: "TRDW Handbook"
+  author: "Tufts Clinical and Translational Science Institute"
+  date: last-modified
+  date-format: "YYYY-MM-DD"
   chapters:
     - index.qmd
     - intro.qmd
@@ -17,7 +18,18 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
+    embed-resources: true
+    smooth-scroll: true
+    backgroundcolor: "#f7f7f7"
+    linkcolor: "#17578d"
+    page-layout: article
+    fontcolor: black
+    toc: true
+    toc-location: left
+    toc-title: Summary
+    toc-depth: 3
   pdf:
     documentclass: scrreprt
     output-file: trdw-handbook
     output-ext: pdf
+    colorlinks: true

@@ -1,10 +1,13 @@
+sources := index.qmd intro.qmd references.qmd summary.qmd _quarto.yml
 preview:
 	quarto preview .
 clean:
 	rm -rf docs
-docs/trdw-handbook.pdf: index.qmd intro.qmd references.qmd summary.qmd
-	quarto render --to pdf --output trdw-handbook.pdf
-view: docs/trdw-handbook.pdf
-	evince docs/trdw-handbook.pdf
+docs/TRDW-Handbook.pdf: $(sources)
+	quarto render --to pdf --output TRDW-Handbook.pdf
+docs/TRDW-Handbook.docx: $(sources)
+	quarto render --to docx --output TRDW-Handbook.docx
+view: docs/TRDW-Handbook.pdf
+	evince docs/TRDW-Handbook.pdf
 depend:
 	apt-get install librsvg2-bin
