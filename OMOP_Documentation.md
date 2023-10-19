@@ -107,7 +107,7 @@ R, SQL, Python, or any preferred data analysis software. Examples provided below
 - Use visualization tools to identify patterns or trends.
 - Document all steps and methodologies for reproducibility.
 
-## Analysus with SQL
+## Analysis with SQL
 
 The [OMOP Query Library](https://data.ohdsi.org/QueryLibrary/) is a library of commonly-used SQL queries for the OMOP Common Data Model (CDM).
 
