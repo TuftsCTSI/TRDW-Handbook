@@ -82,7 +82,6 @@ For any questions or issues, please contact the CTSI informatics team at XXX Not
 
 <!-- Note to Clark:  Can we make an entity relationship diagram to show how the ids in the tables are connected? -->
 
-
 <!-- Note to Clark: 
 I am also working on FAQs and can make some sample R code, below. I also recommend having them meet with me for an hour if helpful.  I do not mind at all.
 ### FAQ
@@ -91,7 +90,6 @@ I am also working on FAQs and can make some sample R code, below. I also recomme
   
 - **What do I do if I get stuck?**
   Reach out to Danielle w/ questions.-->
-
 
 ### Data Limitations
 Be aware of limitations or biases in the data subset. Not all EHR data are represented in this subset.
@@ -103,12 +101,11 @@ R, SQL, Python, or any preferred data analysis software. Examples provided below
 <!-- Note for Clark:  Assume they will not load into a database and rather read the files into R individually. I am adding SQL just in case.-->
 
 ## Data Analysis Tips 
-[Hiemstra, B., Keus, F., Wetterslev, J. et al. DEBATE-statistical analysis plans for observational studies. BMC Med Res Methodol 19, 233 (2019). https://doi.org/10.1186/s12874-019-0879-5] (https://rdcu.be/doYlw)
-[Data Camp Programming] "Cheat Sheets" (https://www.datacamp.com/cheat-sheet)
+[Hiemstra, B., Keus, F., Wetterslev, J. et al. DEBATE-statistical analysis plans for observational studies. BMC Med Res Methodol 19, 233 (2019).] (https://doi.org/10.1186/s12874-019-0879-5) 
+[Data Camp Programming "Cheat Sheets"](https://www.datacamp.com/cheat-sheet)
 - Start with exploratory data analysis to understand data distributions.
 - Use visualization tools to identify patterns or trends.
 - Document all steps and methodologies for reproducibility.
-
 
 ## Analysus with SQL
 
