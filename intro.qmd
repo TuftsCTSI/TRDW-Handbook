@@ -56,7 +56,6 @@ The data subset is provided in several CSV files. An exported data inventory typ
 - concept_ancestor.csv
 - keyfile.csv 
 
-
 ### Privacy Considerations
 
 The TRDW's deidentified data sets use time-shifting, see @pmid27013522.
