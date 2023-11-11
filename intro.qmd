@@ -2,6 +2,89 @@
 
 This is a user facing manual for the Tufts Research Data Warehouse ("TRDW")
 
+# Projects Best Suited for TRDW
+![Source:  https://www.ohdsi.org/wp-content/uploads/2023/01/SOS-challenge-intro-24jan2023.pdf](AnalyticUseCases.bmp) 
+
+Different IRB forms may be used depending on the project characteristics.
+
+## Who We Are
+TBD - Meet the Team
+Bios
+
+<!-- Note to Clark, perhaps none of this belongs here as it is someone else's turf so I will let you decide.
+## What We Do
+The TRDW team offers a consultation service to Tufts School of Medicine researchers on topics related to biomedical informatics and clinical data access for research. Informaticists work with you to refine your research question, if necessary, and advise on the appropriate IRB pathway. We then provide you with a data extraction plan to meet your research needs.
+
+## When to connect with us
+Researchers are encouraged to contact us early in the study design process and long before protocol finalization and submission to the IRB.
+
+## Service Costs
+TBD
+Up to one hour of free consultation is subsidized by the Tufts University School of Medicine XXX. Custom research data extracts for research are offered on a fee-for-service basis.-->
+
+## When to include TRDW staff as members of the study team
+TBD
+<!-- Note for Clark: The following comes from PMAP language I already had, but I wasn't sure what was the appropriate answer from Tufts policy standpoint.  TRDW staff should be included as members of the study team in eIRB if they are making substantial contributions to the work. Discuss any plans to include TRDW staff on the study team with the staff in question.-->
+
+## Sensitive Data
+<!-- Note for Clark:need to make sure this is all accurate - pulling from previous work -->
+Sensitive data, including psychotherapy notes, substance abuse data, and HIV data, have special legal protections. Therefore, they are excluded by default from standard TRDW projections.
+
+The following types of data are classified as sensitive:
+- Notes from mental health or substance abuse professionals
+- Diagnoses related to mental health, substance abuse, or HIV
+- Medication orders for mental health, substance abuse, or HIV (specifically for these conditions)
+- HIV test results
+
+You can include sensitive data in your TRDW projection if you provide appropriate scientific justification in the IRB-approved study protocol.
+
+Ensure that sensitive data is explicitly described in the protocol and specifically requested in your data request.
+
+Be aware that the definition of sensitive data may evolve over time with the development of new drugs and new applications for existing drugs and tests.
+
+The TRDW team will continuously update data projection restrictions to align with the latest definitions of sensitive data.
+
+
+## The COllaboration Process
+<!-- Note for Clark: I realize this isn't completely accurate but wanted to get us started with the outline. -->
+```{mermaid}
+flowchart TD
+    A[PersonA receives a research request]
+    B[Person/group B sets up a meeting]
+    C[Iterative biomedical query mediation process begins]
+    D[Project outline is created and signed off by all parties]
+    E[Voucher/payment/estimate is produced including resource and timeframe]
+    F[Department head reviews/signs off on the voucher request]
+    G[Work begins]
+    H[First draft is produced with a notebook]
+    I[Meeting is scheduled to review results of the notebook]
+    J[Necessary modifications are made and returned to the researcher]
+    K[End of Process]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+    I --> J
+    J -.->|If modifications needed| G
+    J -->|If complete| K
+```
+
+## Describing TRDW Data and Data Management in your IRB application.
+<!-- Note for Clark:need your input on what IRB has said.  Perhaps we should co-author this with IRB? If you have a contact I can work with them on it. 
+
+## Working with Notebooks
+TBD
+
+# Publishing your work
+-add language about CTSI which is supposed to be mentioned
+-publishing your notebooks as a supplement
+TBD-->
+
 # CTSI OMOP Data Export
 ## General Documentation for Researchers Receiving Exported OMOP CDM Subset
 This document provides guidance on using a subset of Tufts electronic health record data in OMOP CDM format. If you are looking for information on how to request your own data set, review this guidance. <!-- Note for Clark:  Is there a page to data request process similar to: (https://ctsi.wakehealth.edu/service/data-and-design/data-extraction)?  I see this page: (https://www.tuftsctsi.org/research-services/informatics/) -->
@@ -77,11 +160,12 @@ Not sure if they receive PHI, source fields, but here would discuss how to look 
 <!-- ## Support & Resources
 For any questions or issues, please contact the CTSI informatics team at XXX Note to Clark:  Consider adding Danielle here for customer service. -->
 
-### Additional Resources
+### OHDSI Resources
 - [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/CommonDataModel.html)
 - [OMOP CDM Documentation](https://ohdsi.github.io/CommonDataModel/cdm53.html)
 - [OHDSI Forums](https://forums.ohdsi.org/) for community support.
 - [Athena](https://athena.ohdsi.org/) to look up individual concepts in your data
+- [NIH ALL of US OMOP Documentation](https://support.researchallofus.org/hc/en-us/articles/360039585391-How-the-Observational-Medical-Outcomes-Partnership-OMOP-vocabulary-are-structured)
 
 <!-- Note to Clark:  Can we make an entity relationship diagram to show how the ids in the tables are connected? -->
 
@@ -105,12 +189,33 @@ R, SQL, Python, or any preferred data analysis software. Examples provided below
 <!-- Note for Clark:  Are there any limitations on software available to researchers at Tufts? -->
 <!-- Note for Clark:  Assume they will not load into a database and rather read the files into R individually. I am adding SQL just in case.-->
 
-## Data Analysis Tips 
-[Hiemstra, B., Keus, F., Wetterslev, J. et al. DEBATE-statistical analysis plans for observational studies. BMC Med Res Methodol 19, 233 (2019). https://doi.org/10.1186/s12874-019-0879-5] (https://rdcu.be/doYlw)
-[Data Camp Programming] "Cheat Sheets" (https://www.datacamp.com/cheat-sheet)
-- Start with exploratory data analysis to understand data distributions.
-- Use visualization tools to identify patterns or trends.
-- Document all steps and methodologies for reproducibility.
+## Jupyter Notebooks and programming
+[Source:NIH All of US Study] (https://support.researchallofus.org/hc/en-us/articles/360039690191-Jupyter-Notebooks-and-programming)
+
+Below you will find links to  helpful resources on using Jupyter Notebooks. 
+Below you will find links to some of the most helpful resources that we have created and/or found on using Jupyter Notebooks. While we can’t teach you how to program, we have identified some online resources that can help get you started.
+
+- [Project Jupyter](https://jupyter.org/)
+- [What is the Jupyter Notebook?](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html)
+- [Intro to Jupyter Notebooks and Anaconda (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.1.1)
+
+Software Carpentry is a website that provides free online lessons to researchers wanting to enhance their programming skills for data analysis. This website offers free online lessons on a variety of useful topics including:
+
+- [Programming with Python](http://swcarpentry.github.io/python-novice-inflammation/)
+- [Programming with R](http://swcarpentry.github.io/r-novice-inflammation/)
+- [Databases and SQL](http://swcarpentry.github.io/sql-novice-survey/)
+
+We have included additional resources for help with programming below.
+
+- [DataCamp](http://www.datacamp.com/)
+- [Codecademy - Learn Python 2](https://www.codecademy.com/learn/learn-python)
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
+- [R for Data Science](https://r4ds.had.co.nz/)
+- [Introduction to Programming (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.1)
+- [Python Programming (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.2)
+- [Data Analysis with Python and Pandas (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.3)
+- [Data Visualization with Python (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.4)
+
 
 
 ## Analysis with SQL
