@@ -160,6 +160,26 @@ Not sure if they receive PHI, source fields, but here would discuss how to look 
 <!-- ## Support & Resources
 For any questions or issues, please contact the CTSI informatics team at XXX Note to Clark:  Consider adding Danielle here for customer service. -->
 
+## OHDSI
+```{mermaid}
+graph LR
+    ICD9("ICD9") -->|Transformation to OMOP CDM| SNOMED("STANDARD<br>Vocabulary Concept Code<br>SNOMED")
+    ICD10("ICD10") -->|Transformation to OMOP CDM| SNOMED
+```
+
+| Domain                    | Source Vocabulary              | Standard Vocabulary       |
+|---------------------------|--------------------------------|---------------------------|
+| Conditions                | ICD9, ICD10                    | SNOMED                    |
+| Measurements              | LOINC or institutional specific codes | LOINC               |
+| Drugs                     | NDC                            | RxNORM                    |
+| Procedures                | ICD9, ICD10, CPT               | SNOMED                    |   |
+
+* ICD = International Classification of Diseases
+* SNOMED = Systematized Nomenclature of Medicine
+* LOINC = Logical Observation Identifiers Names and Codes
+* NDC = National Drug Code
+* CPT = Current Procedural Terminology
+
 ### OHDSI Resources
 - [The Book of OHDSI](https://ohdsi.github.io/TheBookOfOhdsi/CommonDataModel.html)
 - [OMOP CDM Documentation](https://ohdsi.github.io/CommonDataModel/cdm53.html)
