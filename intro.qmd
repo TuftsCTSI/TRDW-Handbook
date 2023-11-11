@@ -7,10 +7,6 @@ This is a user facing manual for the Tufts Research Data Warehouse ("TRDW")
 
 Different IRB forms may be used depending on the project characteristics.
 
-## Who We Are
-TBD - Meet the Team
-Bios
-
 <!-- Note to Clark, perhaps none of this belongs here as it is someone else's turf so I will let you decide.
 ## What We Do
 The TRDW team offers a consultation service to Tufts School of Medicine researchers on topics related to biomedical informatics and clinical data access for research. Informaticists work with you to refine your research question, if necessary, and advise on the appropriate IRB pathway. We then provide you with a data extraction plan to meet your research needs.
