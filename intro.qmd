@@ -41,7 +41,7 @@ Be aware that the definition of sensitive data may evolve over time with the dev
 The TRDW team will continuously update data projection restrictions to align with the latest definitions of sensitive data.
 
 
-## The COllaboration Process
+## The Collaboration Process
 <!-- Note for Clark: I realize this isn't completely accurate but wanted to get us started with the outline. -->
 ```{mermaid}
 flowchart TD
@@ -214,6 +214,10 @@ I am also working on FAQs and can make some sample R code, below. I also recomme
 
 ### Data Limitations
 Be aware of limitations or biases in the data subset. Not all EHR data are represented in this subset.
+
+## Data Science Handbook
+[Open, rigorous and reproducible research: A practitioner’s handbook](https://datascience.stanford.edu/programs/stanford-data-science-scholars-program/data-science-handbook) 
+From Standord Data Science
 
 # Analysis Tools
 R, SQL, Python, or any preferred data analysis software. Examples provided below are for R and SQL.
