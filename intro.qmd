@@ -246,7 +246,7 @@ We have included additional resources for help with programming below.
 - [DataCamp](http://www.datacamp.com/)
 - [Codecademy - Learn Python 2](https://www.codecademy.com/learn/learn-python)
 - [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)
-- [R for Data Science](https://r4ds.had.co.nz/)
+- [R for Data Science](https://r4ds.hadley.nz/)
 - [Introduction to Programming (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.1)
 - [Python Programming (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.2)
 - [Data Analysis with Python and Pandas (NIAID, NIH)](https://bioinformatics.niaid.nih.gov/resources - 70.3.3)
