@@ -89,6 +89,9 @@ This document provides guidance on using a subset of Tufts electronic health rec
 You have received a zip file containing several tables in .csv format. This data subset is derived from the Tufts CTSI <!-- Note for Clark:[insert official name]--> OMOP database which follows the conventions of OMOP 5.3 CDM. A comprehensive data dictionary is available here: [OMOP CDM v5.3](https://ohdsi.github.io). While the documentation for 5.3 applies to this subset, note that your data are a subset of the larger Tufts CTSI OMOP database and therefore the OHDSI software tool stack cannot be used on your subset.
 
 ### What you received in your data package
+You will receive a notebook and several data files (see below)
+The notebook is a ....(see screen shots below)
+
 The data subset is provided in several CSV files. An exported data inventory typically includes:
 1. OMOP.ZIP which has one CSV per OMOP table 
 2. keyfile.csv: maps person_id to MRNs
@@ -135,6 +138,9 @@ The data subset is provided in several CSV files. An exported data inventory typ
 - concept_ancestor.csv
 - keyfile.csv 
 
+# Screen Shots Of A Sample Notebook
+TBD
+
 # Commonly Used CDM Tables Overview
 The OMOP common data model (CDM) is a relational database made up of different tables that relate to each other by foreign keys (XXXX_ID values; e.g., PERSON_ID or PROVIDER_ID). The OMOP tables in your data export are as follows:
 
@@ -172,8 +178,78 @@ Not sure if they receive PHI, source fields, but here would discuss how to look 
 <!-- ## Support & Resources
 For any questions or issues, please contact the CTSI informatics team at XXX Note to Clark:  Consider adding Danielle here for customer service. -->
 
-## OHDSI
-```{mermaid}
+# Data Content Ontology
+![Dr. Rachel Richesson presents "Learning to Use EHR Data in Learning Health Systems"](https://img.youtube.com/vi/4uXqNLsiVuc/maxresdefault.jpg)
+
+## Overview of Major Clinical Terminologies and Coding Systems
+
+This document provides a detailed overview of several essential clinical terminologies and coding systems used in healthcare. Each system has a specific role and is crucial for standardized communication in healthcare settings. The information includes development history, usage, and updates of these systems.
+
+For more in-depth information, links to the respective official websites are provided.
+
+### SNOMED Clinical Terms (SNOMED CT)
+- **Development:** Originally by the College of American Pathologists, now under SNOMED International.
+- **Adoption:** Used in over 50 countries.
+- **Concepts:** Over 340,000 active concepts in 19 hierarchies.
+- **Usage:** Encodes clinical information including diseases, findings, and procedures.
+- **Updates:** Biannual, with more frequent updates planned.
+- **More Information:** [SNOMED International](https://www.snomed.org/snomed-ct)
+
+### Logical Observation Identifiers Names and Codes (LOINC)
+- **Developer:** Regenstrief Institute.
+- **Function:** Identifiers for laboratory and clinical observations.
+- **Content:** Over 90,000 terms.
+- **Collaboration:** With SNOMED CT for coded content development.
+- **Updates:** Biannual.
+- **More Information:** [LOINC](https://loinc.org)
+
+### RxNorm
+- **Developer:** National Library of Medicine (NLM).
+- **Function:** Standard nomenclature for medications.
+- **Integration:** Links to various drug vocabularies.
+- **Access:** Requires UMLS user license for proprietary content.
+- **More Information:** [RxNorm - NLM](https://www.nlm.nih.gov/research/umls/rxnorm)
+
+### International Classification of Disease (ICD)
+- **Endorsement:** World Health Organization (WHO).
+- **Versions:** ICD-10 widely used with national extensions; ICD-11 adopted for future use.
+- **Purpose:** Epidemiology, health management, clinical purposes.
+- **Updates:** Annual, freely available.
+- **More Information:** [WHO ICD](https://www.who.int/classifications/icd)
+
+### Current Procedural Terminology (CPT)
+- **Developer:** American Medical Association (AMA).
+- **Use:** Encoding of medical services and procedures in the USA.
+- **Categories:** Three categories of codes.
+- **Requirement:** License from AMA for use.
+- **More Information:** [CPT - AMA](https://www.ama-assn.org/practice-management/cpt)
+
+### Human Phenotype Ontology (HPO)
+- **Function:** Bioinformatic resources for human diseases and phenotypes analysis.
+- **Components:** Phenotype vocabulary, disease-phenotype annotations, algorithms.
+- **Applications:** Genomic interpretation, gene-disease discovery, precision medicine.
+- **Content:** Over 13,000 terms in 5 hierarchies.
+- **Availability:** Freely available, multiple releases per year.
+- **More Information:** [Human Phenotype Ontology](https://hpo.jax.org)
+
+### Unified Medical Language System (UMLS)
+- **Initiation:** By the US National Library of Medicine in 1986.
+- **Goal:** To aid in the retrieval and integration of electronic biomedical information.
+- **Challenge Addressed:** Different vocabularies expressing the same information differently.
+- **Availability:** Free, but requires a license due to additional licensing requirements of some contents.
+- **More Information:** [UMLS - NLM](https://www.nlm.nih.gov/research/umls)
+
+### Ontology Mapping in BioPortal Applications
+- **Process:** Finding the closest match of a code from one ontology in another.
+- **Matching:** Exact equivalence is rare; approximate matching is common.
+- **Challenges:** Labor-intensive and requires understanding the maps' nature and limitations.
+- **Alternative Approach:** Mapping multiple ontologies to a central core terminology, as used by the OHDSI consortium.
+- **More Information:** [BioPortal](https://bioportal.bioontology.org)
+
+    <div style="text-align: right"><a href="#table-of-contents">Back to Table of Contents</a></div>
+
+## OMOP Domains by Source to Standard Vocabulary
+```mermaid
 graph LR
     ICD9("ICD9") -->|Transformation to OMOP CDM| SNOMED("STANDARD<br>Vocabulary Concept Code<br>SNOMED")
     ICD10("ICD10") -->|Transformation to OMOP CDM| SNOMED
@@ -211,9 +287,14 @@ I am also working on FAQs and can make some sample R code, below. I also recomme
 - **What do I do if I get stuck?**
   Reach out to Danielle w/ questions.-->
 
-
 ### Data Limitations
 Be aware of limitations or biases in the data subset. Not all EHR data are represented in this subset.
+
+# Special Topic:  Cinical Registries Using OHDSI
+
+[![OHDSI and Clinical Registries: Sanity for Health Systems (Aug. 22 Community Call)](http://img.youtube.com/vi/DPatSxFkIpI/0.jpg)](https://youtu.be/DPatSxFkIpI?si=VOqE4VTlzIcxuWdP)
+
+[Clinical Registries in OHDSI - September 2022](https://www.ohdsi.org/wp-content/uploads/2022/09/OHDSI-Clinical_Registries.pdf)
 
 ## Data Science Handbook
 [Open, rigorous and reproducible research: A practitioner’s handbook](https://datascience.stanford.edu/programs/stanford-data-science-scholars-program/data-science-handbook) 
