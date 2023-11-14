@@ -183,9 +183,7 @@ For any questions or issues, please contact the CTSI informatics team at XXX Not
 
 ## Overview of Major Clinical Terminologies and Coding Systems
 
-This document provides a detailed overview of several essential clinical terminologies and coding systems used in healthcare. Each system has a specific role and is crucial for standardized communication in healthcare settings. The information includes development history, usage, and updates of these systems.
-
-For more in-depth information, links to the respective official websites are provided.
+Here is a detailed overview of several essential clinical terminologies and coding systems used in observational research. 
 
 ### SNOMED Clinical Terms (SNOMED CT)
 - **Development:** Originally by the College of American Pathologists, now under SNOMED International.
@@ -246,7 +244,15 @@ For more in-depth information, links to the respective official websites are pro
 - **Alternative Approach:** Mapping multiple ontologies to a central core terminology, as used by the OHDSI consortium.
 - **More Information:** [BioPortal](https://bioportal.bioontology.org)
 
-    <div style="text-align: right"><a href="#table-of-contents">Back to Table of Contents</a></div>
+### Recommended Reading
+- **Chapter Title**: Knowledge Representation and Ontologies
+- **Authors**: Kin Wah Fung & Olivier Bodenreider
+- **In**: Clinical Research Informatics
+- **Editors**: Rachel L. Richesson, James E. Andrews, Kate Fultz Hollis
+- **Publisher**: Springer Nature
+- **First Online**: 15 June 2023
+- **DOI**: [10.1007/978-3-031-27173-1](https://doi.org/10.1007/978-3-031-27173-1)
+- **Pages**: 367–388
 
 ## OMOP Domains by Source to Standard Vocabulary
 ```mermaid
