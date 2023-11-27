@@ -194,7 +194,7 @@ Here is a detailed overview of several essential clinical terminologies and codi
 - **More Information:** [SNOMED International](https://www.snomed.org/snomed-ct)
 
 ### Logical Observation Identifiers Names and Codes (LOINC)
-- **Developer:** Regenstrief Institute.
+- **Development:** Regenstrief Institute.
 - **Function:** Identifiers for laboratory and clinical observations.
 - **Content:** Over 90,000 terms.
 - **Collaboration:** With SNOMED CT for coded content development.
